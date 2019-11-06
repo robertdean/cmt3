@@ -40,4 +40,19 @@ List<Feature> features = [
       description: '',
       route: 'vitals',
       icon: FontAwesomeIcons.heartbeat),
+  Feature(
+      name: 'Things to Know',
+      description: '',
+      route: 'toknow',
+      icon: FontAwesomeIcons.heartbeat),
+  Feature(
+      name: 'To do\'s',
+      description: '',
+      route: 'todos',
+      icon: FontAwesomeIcons.list),
+  Feature(
+      name: 'History',
+      description: '',
+      route: 'history',
+      icon: FontAwesomeIcons.history),
 ];
