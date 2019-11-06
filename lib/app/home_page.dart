@@ -6,20 +6,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
-        title: Text('Welcome'),
+        title: Text('Betty!'),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: <Widget>[
-              CurrentCharge(),
-            ],
-          ),
-        ),
-      ),
-    );
+      body: CurrentCharge(),
+    ));
   }
 }
