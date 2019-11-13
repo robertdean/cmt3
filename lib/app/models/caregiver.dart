@@ -28,22 +28,22 @@ final caregiverListViewBuilder = new ListView.builder(
 final caregivers = [
   Caregiver(
       id: 'abc',
-      name: 'test1',
+      name: 'Dr. Jenkins',
       specialty: listOfSpecialties[0],
       contactInfo: "123 Main St"),
   Caregiver(
       id: 'cde',
-      name: 'test2',
+      name: 'Dr. Malik',
       specialty: listOfSpecialties[1],
       contactInfo: "123 Main St"),
   Caregiver(
       id: 'efg',
-      name: 'test3',
+      name: 'Dr. Cuevas',
       specialty: listOfSpecialties[2],
       contactInfo: "123 Main St"),
   Caregiver(
       id: 'hij',
-      name: 'test4',
+      name: 'Dr. Lei',
       specialty: listOfSpecialties[3],
       contactInfo: "123 Main St"),
   Caregiver(

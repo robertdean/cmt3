@@ -13,17 +13,53 @@ class Prescription {
   Prescription({this.id, this.name, this.dose, this.format, this.caregiverId});
 }
 
+List<String> formats = [
+  "TABLET",
+  "CAPSULE",
+  "PILL",
+  "CREAM",
+  "OTHER",
+];
+
+List<String> frequencies = [
+  "Morning",
+  "Noon",
+  "Evening",
+  "Bedtime",
+  "As Needed",
+  "Uknown"
+];
 List<Prescription> prescriptions = [
   Prescription(
-      id: '1', name: 'Test1', dose: '10 MG', format: 'TAB', caregiverId: 'abc'),
+      id: '1',
+      name: 'Amlodipine',
+      dose: '10 MG',
+      format: 'TABLET',
+      caregiverId: 'abc'),
   Prescription(
-      id: '2', name: 'Test2', dose: '10 MG', format: 'TAB', caregiverId: 'abc'),
+      id: '2',
+      name: 'Clonodine',
+      dose: '10 MG',
+      format: 'TABLET',
+      caregiverId: 'abc'),
   Prescription(
-      id: '3', name: 'Test3', dose: '10 MG', format: 'TAB', caregiverId: 'abc'),
+      id: '3',
+      name: 'Duloxetine',
+      dose: '10 MG',
+      format: 'CAPSULE',
+      caregiverId: 'cde'),
   Prescription(
-      id: '4', name: 'Test4', dose: '10 MG', format: 'TAB', caregiverId: 'abc'),
+      id: '4',
+      name: 'Test4',
+      dose: '10 MG',
+      format: 'TABLET',
+      caregiverId: 'abc'),
   Prescription(
-      id: '5', name: 'Test5', dose: '10 MG', format: 'TAB', caregiverId: 'abc'),
+      id: '5',
+      name: 'Test5',
+      dose: '10 MG',
+      format: 'TABLET',
+      caregiverId: 'abc'),
 ];
 
 final prescriptionsListViewBuilder = ListView.builder(

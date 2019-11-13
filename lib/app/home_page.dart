@@ -1,4 +1,5 @@
 import 'package:fbt/app/charges/current_charge.dart';
+import 'package:fbt/app/charges/forms/prescription.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Betty'),
       ),
-      body: CurrentCharge(),
+      body: PrescriptionForm(),
     ));
   }
 }
