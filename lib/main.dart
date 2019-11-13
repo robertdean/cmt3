@@ -1,3 +1,4 @@
+import 'package:fbt/app/routes.dart';
 import 'package:flutter/material.dart';
 import 'app/landing_page.dart';
 
@@ -7,7 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      routes: routes(context),
+      title: 'ChargeMgr',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

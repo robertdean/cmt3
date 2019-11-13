@@ -1,3 +1,6 @@
+import 'package:fbt/app/charges/prescriptions/prescriptions_list.dart';
+import 'package:fbt/app/models/caregiver.dart';
+import 'package:fbt/app/models/prescription.dart';
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -6,53 +9,63 @@ class Feature {
   final String route;
   final String description;
   final IconData icon;
-  Feature({this.name, this.route, this.description, this.icon});
+  final ListView list;
+  Feature({this.name, this.route, this.description, this.icon, this.list});
 }
 
 List<Feature> features = [
   Feature(
       name: 'Prescriptions',
       description: '',
-      route: 'meds',
-      icon: FontAwesomeIcons.capsules),
+      route: PrescriptionList.routeName,
+      icon: FontAwesomeIcons.capsules,
+      list: prescriptionsListViewBuilder),
   Feature(
       name: 'Caregivers',
       description: '',
       route: 'caregivers',
-      icon: FontAwesomeIcons.userMd),
+      icon: FontAwesomeIcons.userMd,
+      list: caregiverListViewBuilder),
   Feature(
       name: 'Collaborators',
       description: '',
       route: 'collaborators',
-      icon: FontAwesomeIcons.users),
+      icon: FontAwesomeIcons.users,
+      list: null),
   Feature(
       name: 'Appointments',
       description: '',
       route: 'appointments',
-      icon: FontAwesomeIcons.calendarCheck),
+      icon: FontAwesomeIcons.calendarCheck,
+      list: null),
   Feature(
       name: 'Conditions',
       description: '',
       route: 'conditions',
-      icon: FontAwesomeIcons.accessibleIcon),
+      icon: FontAwesomeIcons.accessibleIcon,
+      list: null),
   Feature(
       name: 'Vitals',
       description: '',
       route: 'vitals',
-      icon: FontAwesomeIcons.heartbeat),
+      icon: FontAwesomeIcons.heartbeat,
+      list: null),
   Feature(
       name: 'Things to Know',
       description: '',
       route: 'toknow',
-      icon: FontAwesomeIcons.heartbeat),
+      icon: FontAwesomeIcons.heartbeat,
+      list: null),
   Feature(
       name: 'To do\'s',
       description: '',
       route: 'todos',
-      icon: FontAwesomeIcons.list),
+      icon: FontAwesomeIcons.list,
+      list: null),
   Feature(
       name: 'History',
       description: '',
       route: 'history',
-      icon: FontAwesomeIcons.history),
+      icon: FontAwesomeIcons.history,
+      list: null),
 ];

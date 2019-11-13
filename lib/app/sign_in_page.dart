@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class SignInPage extends StatelessWidget {
+  static const routeName = 'signInPage';
   const SignInPage({Key key}) : super(key: key);
 
   @override

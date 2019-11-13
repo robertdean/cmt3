@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 class Todos extends StatelessWidget {
+  static const routeName = '/todosList';
   const Todos({Key key}) : super(key: key);
 
   @override

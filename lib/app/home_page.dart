@@ -2,6 +2,7 @@ import 'package:fbt/app/charges/current_charge.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  static const routeName = 'homePage';
   const HomePage({Key key}) : super(key: key);
 
   @override
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
-        title: Text('Betty!'),
+        title: Text('Betty'),
       ),
       body: CurrentCharge(),
     ));

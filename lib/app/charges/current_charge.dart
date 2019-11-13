@@ -1,3 +1,4 @@
+import 'package:fbt/app/charges/selected_feature_list.dart';
 import 'package:fbt/app/models/feature.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -18,7 +19,16 @@ class CurrentCharge extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
                 onTap: () {
-                  print('Card tapped.');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SelectedFeatureList(
+                        key: new GlobalKey(),
+                        title: feature.name,
+                        listView: feature.list,
+                      ),
+                    ),
+                  );
                 },
                 child: Column(
                   children: <Widget>[
